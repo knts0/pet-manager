@@ -10,6 +10,11 @@ scalaVersion := "2.12.8"
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 
+libraryDependencies ++= Seq(
+  "com.h2database" % "h2" % "1.4.196",
+  "com.typesafe.slick" %% "slick" % "3.2.1"
+)
+
 // Adds additional packages into Twirl
 //TwirlKeys.templateImports += "com.knts0.controllers._"
 
